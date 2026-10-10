@@ -21,7 +21,7 @@
   <li><strong>Google OAuth authorization</strong> for two scopes only:
     <ul>
       <li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload videos to the authorized channel.</li>
-      <li><code>https://www.googleapis.com/auth/youtube.readonly</code> — used only to re-check the upload and privacy/scheduling status of videos that the Tool itself uploaded, so that stored information stays current.</li>
+      <li><code>https://www.googleapis.com/auth/youtube.readonly</code> — used only (1) to confirm which of the owner's own channels an authorization belongs to (channel name and ID, via channels.list with mine=true), and (2) to re-check the upload and privacy/scheduling status of videos that the Tool itself uploaded, so that stored information stays current.</li>
     </ul>
     The Tool does not read viewer data, comments, subscribers, analytics, or any other Google account data, and does not read videos it did not upload.</li>
   <li><strong>OAuth tokens</strong> issued by Google, stored only on the owner’s own computer.</li>
